@@ -37,12 +37,20 @@ function About() {
             apps using React. I'm in love with building interactive and dynamic
             websites.
           </p>
-          <div>
-            <ul>
+          <div className="flex flex-col gap-3">
+            <ul className="flex justify-between text-2xl">
               <li>Skills</li>
               <li>Experience</li>
               <li>Education</li>
             </ul>
+            <div>
+              <h5 className="">Languages</h5>
+              <h5 className="text-lg">Python, JavaScript, HTML, CSS</h5>
+              <h5>Framework/ Libraries</h5>
+              <h5>Flask, Bootstrap, JQuery, ExpressJS, Pandas, Turtle</h5>
+              <h5>Tools/DevOps</h5>
+              <h5>Node.JS, EJS, GitHub, VSCode, JQuery, ExpressJS</h5>
+            </div>
           </div>
         </div>
       </div>
