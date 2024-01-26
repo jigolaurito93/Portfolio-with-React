@@ -10,20 +10,22 @@ function LandingDisplay() {
           <img
             src={jigo}
             alt="profile photo"
-            className="w-72 object-cover rounded-full"
+            className="object-cover rounded-full w-72 md:w-96 lg:w-96"
           />
         </div>
         <div className="flex flex-col gap-4 md:gap-5 xl:gap-7">
           <h3 className="text-xl text-white">Software Engineer</h3>
-          <h1 className="text-3xl md:text-4xl text-white font-bold lg:text-6xl xl:text-6xl">JOSE LAURITO</h1>
+          <h1 className="text-3xl md:text-4xl text-white font-bold lg:text-6xl xl:text-6xl">
+            JOSE LAURITO
+          </h1>
           <p className="text-white text-xs lg:text-lg">
             Professional Chef turned Software Engineer, and a proud new Dad.
           </p>
           <div className="flex gap-3 justify-center">
-            <button className="border rounded-full py-1 text-xs w-28 text-white">
+            <button className="border rounded-full py-1 text-xs w-28 border-none bg-[#64c5da]">
               Download CV
             </button>
-            <button className="border rounded-full px-3 py-1 text-xs w-28 text-white">
+            <button className="border rounded-full px-3 py-1 text-xs w-28 border-none bg-[#64c5da]">
               Contact Me
             </button>
           </div>
