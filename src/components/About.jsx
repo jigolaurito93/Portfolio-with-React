@@ -105,7 +105,7 @@ function About() {
               <li onClick={handleEducation}>Education</li>
             </ul>
             {skills ? (
-              <div>
+              <div className="border h-52">
                 {mySkills.map((skill, i) => (
                   <div>
                     <h5>{skill.title}</h5>
@@ -114,7 +114,7 @@ function About() {
                 ))}
               </div>
             ) : experience ? (
-              <div>
+              <div className="border h-52">
                 {myExperience.map((experience, i) => (
                   <div>
                     <h5>{experience.title}</h5>
@@ -123,7 +123,7 @@ function About() {
                 ))}
               </div>
             ) : education ? (
-              <div>
+              <div className="border h-52">
                 {myEducation.map((education, i) => (
                   <div>
                     <h5>{education.title}</h5>
