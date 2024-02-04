@@ -100,9 +100,9 @@ function About() {
           </p>
           <div className="flex flex-col gap-3">
             <ul className="flex justify-between text-2xl">
-              <li onClick={handleSkill}>Skills</li>
-              <li onClick={handleExperience}>Experience</li>
-              <li onClick={handleEducation}>Education</li>
+              <li onClick={handleSkill} className={`${skills && 'underline underline-offset-8' } cursor-pointer`}>Skills</li>
+              <li onClick={handleExperience} className={`${experience && 'underline underline-offset-8' } cursor-pointer`}>Experience</li>
+              <li onClick={handleEducation} className={`${education && 'underline underline-offset-8' } cursor-pointer`}>Education</li>
             </ul>
             {skills ? (
               <div className="border h-52">
