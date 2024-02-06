@@ -44,6 +44,7 @@ const myEducation = [
 ];
 
 function About() {
+  const [itemSelected, setItemSelected] = useState(mySkills);
   const [skills, setSkills] = useState(true);
   const [experience, setExperience] = useState(false);
   const [education, setEducation] = useState(false);
@@ -52,26 +53,29 @@ function About() {
     setSkills(true);
     setExperience(false);
     setEducation(false);
+    setItemSelected(mySkills)
   };
   const handleEducation = (e) => {
     setEducation(true);
     setExperience(false);
     setSkills(false);
+    setItemSelected(myEducation)
   };
   const handleExperience = () => {
     setExperience(true);
     setEducation(false);
     setSkills(false);
+    setItemSelected(myExperience)
   };
   return (
-    <div className="px-12 py-12">
+    <div className="px-12 py-12 bg-[#20232f]">
       <div className="flex flex-col gap-7">
         <div className="flex justify-center">
           <img src={chefPhoto} alt="" className="w-80" />
         </div>
-        <div className="flex flex-col gap-5">
-          <h2 className="text-4xl">About Me</h2>
-          <p>
+        <div className="flex flex-col gap-5 text-white">
+          <h2 className="text-4xl font-semibold">About Me</h2>
+          <p className="font-semibold">
             Hello, I'm Jose, a professional Chef turned Software Engineer, and a
             proud new Dad. Tech-savvy and raised in a generation immersed in
             technology, I'm fascinated by its profound impact, both positive and
@@ -80,7 +84,7 @@ function About() {
             especially in the ever-evolving landscape of programs, software, and
             hardware.
           </p>
-          <p>
+          <p className="font-semibold">
             Driven by a passion for data and technology, I am committed to
             ongoing learning and pushing boundaries for personal and
             professional growth. I find satisfaction in problem-solving,
@@ -91,7 +95,7 @@ function About() {
             APIs, HTML, CSS, and more, to create robust and user-friendly
             applications.
           </p>
-          <p>
+          <p className="font-semibold">
             I would say that JavaSript is my strongest and absolute favorite
             language because of its versatility. Once you've mastered it, the
             possibilities are endless. You can develop web, mobile, and desktop
@@ -99,39 +103,23 @@ function About() {
             websites.
           </p>
           <div className="flex flex-col gap-7">
-            <ul className="flex justify-between text-2xl">
-              <li onClick={handleSkill} className={`${skills && 'underline underline-offset-8' } cursor-pointer`}>Skills</li>
-              <li onClick={handleExperience} className={`${experience && 'underline underline-offset-8' } cursor-pointer`}>Experience</li>
-              <li onClick={handleEducation} className={`${education && 'underline underline-offset-8' } cursor-pointer`}>Education</li>
+            <ul className="flex justify-between text-2xl text-[#03c9d8]">
+              <li onClick={handleSkill} className={`${skills && 'underline underline-offset-8' } cursor-pointer`}>SKILLS</li>
+              <li onClick={handleExperience} className={`${experience && 'underline underline-offset-8' } cursor-pointer`}>EXPERIENCE</li>
+              <li onClick={handleEducation} className={`${education && 'underline underline-offset-8' } cursor-pointer`}>EDUCATION</li>
             </ul>
-            {skills ? (
+        
               <div className="border flex flex-col gap-2 h-52">
-                {mySkills.map((skill, i) => (
+                {itemSelected.map((item, i) => (
                   <div>
-                    <h5 className="">{skill.title}</h5>
-                    <h5 className="text-lg">{skill.content}</h5>
+                    <h5 className="text-[#03c9d8]">{item.title}</h5>
+                    <h5 className="text-lg">{item.content}</h5>
                   </div>
                 ))}
               </div>
-            ) : experience ? (
-              <div className="border h-52">
-                {myExperience.map((experience, i) => (
-                  <div>
-                    <h5 className="text-lg">{experience.title}</h5>
-                    <h5 className="text-xl">{experience.content}</h5>
-                  </div>
-                ))}
-              </div>
-            ) : education ? (
-              <div className="border h-52">
-                {myEducation.map((education, i) => (
-                  <div className="flex flex-col gap-1">
-                    <h5 className="text-base">{education.title}</h5>
-                    <h5 className="text-xl">{education.content}</h5>
-                  </div>
-                ))}
-              </div>
-            ) : null}
+         
+   
+
           </div>
         </div>
       </div>
