@@ -3,8 +3,8 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      lato: ["Lato", "sans-serif"],
-      playFair: ["Playfair Display", "serif"],
+      bebasNeue: ['Bebas Neue', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
     },
     extend: {},
   },

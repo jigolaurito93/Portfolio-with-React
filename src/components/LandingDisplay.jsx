@@ -13,7 +13,7 @@ function LandingDisplay() {
             className="object-cover rounded-full w-72 md:w-96 lg:w-96"
           />
         </div>
-        <div className="flex flex-col gap-4 md:gap-5 xl:gap-7">
+        <div className="flex flex-col gap-4 md:gap-5 xl:gap-7 font-bebasNeue">
           <h3 className="text-xl text-white">Software Engineer</h3>
           <h1 className="text-3xl md:text-4xl text-white font-bold lg:text-6xl xl:text-6xl">
             JOSE LAURITO

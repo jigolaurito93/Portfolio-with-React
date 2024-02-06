@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Bebas Neue";
+    src:
+      local(BebasNeue-Regular),
+      url("/public/fonts/Bebas_Neue/BebasNeue-Regular.ttf")
+        format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
+@font-face {
+    font-family: "Poppins";
+    src:
+      local(BebasNeue-Regular),
+      url("/public/fonts/Poppins/Poppins-Regular.ttf")
+        format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
+@font-face {
+    font-family: "Poppins";
+    src:
+      local(BebasNeue-Regular),
+      url("/public/fonts/Poppins/Poppins-SemiBold.ttf")
+        format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+  }
