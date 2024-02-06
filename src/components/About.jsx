@@ -17,16 +17,16 @@ const mySkills = [
 
 const myExperience = [
   {
+    title: "January 2024, Present",
+    content: "Software Developer - Co.Lab ( Break Buddy )",
+  },
+  {
+    title: "September 2023 - November 2023",
+    content: "Software Developer - Co.Lab ( Matrimoni )",
+  },
+  {
     title: "August 2019 - Present",
-    content: "Hotel/Restaurant Chef - Marriott, Chicago IL",
-  },
-  {
-    title: "February 2019 - August 2019",
-    content: "Restaurant Chef - Embassy Suites O'hare, Rosemont IL",
-  },
-  {
-    title: "January 2017 - January 2019",
-    content: "Restaurant Cook - The Westin, Reston VA",
+    content: "Restaurant Cook - Marriott Magnificent Mile Chicago, IL",
   },
 ];
 
@@ -70,7 +70,7 @@ function About() {
     setItemSelected(myExperience);
   };
   return (
-    <div className="px-12 py-12 bg-[#20232f]">
+    <div className="px-12 pt-12 pb-40 bg-[#20232f]">
       <div className="flex flex-col gap-7">
         <div className="flex justify-center">
           <img src={chefPhoto} alt="" className="w-80" />
