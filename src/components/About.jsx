@@ -98,18 +98,18 @@ function About() {
             apps using React. I'm in love with building interactive and dynamic
             websites.
           </p>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-7">
             <ul className="flex justify-between text-2xl">
               <li onClick={handleSkill} className={`${skills && 'underline underline-offset-8' } cursor-pointer`}>Skills</li>
               <li onClick={handleExperience} className={`${experience && 'underline underline-offset-8' } cursor-pointer`}>Experience</li>
               <li onClick={handleEducation} className={`${education && 'underline underline-offset-8' } cursor-pointer`}>Education</li>
             </ul>
             {skills ? (
-              <div className="border h-52">
+              <div className="border flex flex-col gap-2 h-52">
                 {mySkills.map((skill, i) => (
                   <div>
-                    <h5>{skill.title}</h5>
-                    <h5>{skill.content}</h5>
+                    <h5 className="">{skill.title}</h5>
+                    <h5 className="text-lg">{skill.content}</h5>
                   </div>
                 ))}
               </div>
@@ -117,17 +117,17 @@ function About() {
               <div className="border h-52">
                 {myExperience.map((experience, i) => (
                   <div>
-                    <h5>{experience.title}</h5>
-                    <h5>{experience.content}</h5>
+                    <h5 className="text-lg">{experience.title}</h5>
+                    <h5 className="text-xl">{experience.content}</h5>
                   </div>
                 ))}
               </div>
             ) : education ? (
               <div className="border h-52">
                 {myEducation.map((education, i) => (
-                  <div>
-                    <h5>{education.title}</h5>
-                    <h5>{education.content}</h5>
+                  <div className="flex flex-col gap-1">
+                    <h5 className="text-base">{education.title}</h5>
+                    <h5 className="text-xl">{education.content}</h5>
                   </div>
                 ))}
               </div>
