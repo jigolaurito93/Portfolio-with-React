@@ -5,7 +5,7 @@ import { FacebookIcon, InstagramIcon } from "./Icons";
 function LandingDisplay() {
   return (
     <div className="px-12 h-screen bg-[#0A1828]">
-      <div className="flex flex-col h-full justify-center items-center lg:px-12">
+      <div className="flex flex-col h-full pt-20 lg:pt-0 justify-center items-center lg:px-12">
         <div className="flex flex-col gap-16 md:gap-28 lg:gap-36 lg:flex-row">
           {/* Hero Image */}
           <div className="w-3/4 max-w-80 md:min-w-80 lg:max-w-96 self-center flex justify-center relative aspect-w-1 aspect-h-1">
