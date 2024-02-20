@@ -70,43 +70,30 @@ function About() {
     setItemSelected(myExperience);
   };
   return (
-    <div className="px-12 pt-12 pb-40 bg-[#20232f]">
-      <div className="flex flex-col gap-7">
-        <div className="flex justify-center">
-          <img src={chefPhoto} alt="" className="w-80" />
+    <div className="px-40 xl:px-72 pt-12 pb-40">
+      <div className="flex flex-col gap-20 items-center lg:flex-row">
+        <div className="flex justify-center relative w-[65%] max-w-[300px] lg:w-1/2">
+          <img src={chefPhoto} alt="" className="w-full z-10 rounded-3xl" />
+          <div className="absolute border-[#BFA181] top-8 left-8 rounded-3xl border-8 w-full h-full"></div>
         </div>
-        <div className="flex flex-col gap-5 text-white">
-          <h2 className="text-4xl font-semibold">About Me</h2>
-          <div className="font-poppins flex flex-col gap-6 tracking-wide">
+        <div className="flex flex-col gap-5 text-white lg:w-1/2">
+          <h2 className="text-4xl font-semibold text-[#BFA181]">About Me</h2>
+          <div className="font-poppins flex flex-col gap-6 tracking-wide text-[#178582]">
             <p>
               Hello, I'm Jose, a professional Chef turned Software Engineer, and
               a proud new Dad. Tech-savvy and raised in a generation immersed in
-              technology, I'm fascinated by its profound impact, both positive
-              and negative. I strongly disagree with the notion of "If it ain't
-              broke, don't fix it," as I believe continuous improvement is
-              essential, especially in the ever-evolving landscape of programs,
-              software, and hardware.
+              technology. 
             </p>
             <p>
-              Driven by a passion for data and technology, I am committed to
-              ongoing learning and pushing boundaries for personal and
-              professional growth. I find satisfaction in problem-solving,
-              particularly when it can positively impact the companies I work
-              for. As a Software Engineer, I believe in the transformative power
-              of opportunities, and I am eager to contribute my skills,
-              including proficiency in Python, SQL, JavaScript, React, Flask,
-              SQLAlchemy, APIs, HTML, CSS, and more, to create robust and
-              user-friendly applications.
+            My journey into web development sparked in 2005 when "Friendster" emerged.  The ability to personalize profiles, customize backgrounds, fonts, add music, and incorporate special effects captivated me.
             </p>
             <p>
-              I would say that JavaSript is my strongest and absolute favorite
-              language because of its versatility. Once you've mastered it, the
-              possibilities are endless. You can develop web, mobile, and
-              desktop apps using React. I'm in love with building interactive
-              and dynamic websites.
+            While holding a Bachelor's degree in Hospitality - Culinary, I pursued my passion, enrolling in a coding bootcamp in 2023. Achieving certification as a <span className="text-[#BFA181] font-semibold">full-stack software engineer</span>, I concurrently serve as a full-time chef and part-time apprentice at <span className="text-[#BFA181] font-semibold">Co.Lab</span>. Engaging in projects like <span className="text-[#BFA181] font-semibold">"Matrimoni"</span> and <span className="text-[#BFA181] font-semibold">"Break Buddy"</span> has been a rewarding experience.
             </p>
           </div>
-          <div className="flex flex-col gap-7">
+
+
+          {/* <div className="flex flex-col gap-7">
             <ul className="flex justify-between text-2xl text-[#03c9d8] font-bebasNeue tracking-widest leading-7">
               <li
                 onClick={handleSkill}
@@ -144,7 +131,8 @@ function About() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
+
         </div>
       </div>
     </div>
