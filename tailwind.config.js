@@ -3,10 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      bebasNeue: ['Bebas Neue', 'sans-serif'],
-      poppins: ['Poppins', 'sans-serif'],
+      bebasNeue: ["Bebas Neue", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
