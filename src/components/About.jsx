@@ -70,7 +70,7 @@ function About() {
     setItemSelected(myExperience);
   };
   return (
-    <div className="px-40 xl:px-72 pt-12 pb-40">
+    <div className="px-16 md:px-24 xl:px-40 2xl:px-60 pt-12 pb-40">
       <div className="flex flex-col gap-20 items-center lg:flex-row">
         <div className="flex justify-center relative w-[65%] max-w-[300px] lg:w-1/2">
           <img src={chefPhoto} alt="" className="w-full z-10 rounded-3xl" />

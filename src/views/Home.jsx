@@ -3,6 +3,7 @@ import LandingDisplay from "../components/LandingDisplay";
 import About from "../components/About";
 import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <LandingDisplay />
       <About />
       <Skills />
+      <Experience />
     </div>
   );
 }
