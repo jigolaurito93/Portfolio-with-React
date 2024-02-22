@@ -107,6 +107,10 @@ function Experience() {
             Assisted with daily inventory, receiving and stock rotation for each
             station's prep work
           </li>
+          <li>
+            Assisted with daily inventory, receiving and stock rotation for each
+            station's prep work
+          </li>
         </ul>
       </div>
       {/* Co.Lab */}
