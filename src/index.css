@@ -34,3 +34,8 @@
     font-style: normal;
     font-stretch: normal;
   }
+
+  #container:hover > #card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
