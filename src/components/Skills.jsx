@@ -28,9 +28,9 @@ function Skills() {
           <h1 className="text-[#BFA181] text-xl">Languages</h1>
           <div className="flex gap-5 border-[4px] h-40 px-7 rounded-3xl lg:py-7">
             <PythonIcon />
-            <JavaScriptIcon />
+            {/* <JavaScriptIcon />
             <HTMLIcon />
-            <CSSIcon />
+            <CSSIcon /> */}
           </div>
         </div>
         {/* Languages */}
