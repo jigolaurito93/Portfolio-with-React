@@ -36,7 +36,8 @@ function Skills() {
         {/* Languages */}
 
         {/* Framework */}
-        <div className="w-[40%] md:w-[60%] lg:w-[80%] xl:w-[110%] flex flex-col gap-3">
+        {/* <div className="w-[40%] md:w-[60%] lg:w-[80%] xl:w-[110%] flex flex-col gap-3"> */}
+        <div className="w-full md:w-[60%] lg:w-[80%] xl:w-[110%] flex flex-col gap-3">
           <h1 className="text-[#BFA181] text-xl">Framework</h1>
           <div className="flex gap-5 border-[4px] h-40 px-7 rounded-3xl lg:py-7 xl:gap-5">
             <ReactIcon />
