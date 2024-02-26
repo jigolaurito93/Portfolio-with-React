@@ -20,9 +20,10 @@ import {
 function Skills() {
   return (
     <div className="py-10 flex flex-col justify-center items-center font-poppins font-semibold gap-12">
-      <h1 className="text-3xl text-[#BFA181] md:text-white lg:text-yellow-400 xl:text-blue-200 2xl:text-white">Skills</h1>
+      <h1 className="text-3xl text-[#BFA181] md:text-white lg:text-yellow-400 xl:text-blue-200 2xl:text-white">
+        Skills
+      </h1>
       <div className="flex flex-col gap-8 justify-center items-center">
-        
         {/* Languages */}
         <div className="w-[40%] md:w-[60%] lg:w-[80%] xl:w-[110%] flex flex-col gap-3">
           <h1 className="text-[#BFA181] text-xl">Languages</h1>
@@ -48,7 +49,7 @@ function Skills() {
           </div>
         </div>
         {/* Framework */}
-
+        <MUIIcon />
         {/* Tools */}
         <div className="w-[40%] md:w-[60%] lg:w-[80%] xl:w-[110%] flex flex-col gap-3">
           <h1 className="text-[#BFA181] text-xl">Tools</h1>
