@@ -47,7 +47,7 @@ function Projects() {
                 />
                 <h1
                   id="back"
-                  className="text-white text-xl [transform:rotateY(180deg)] w-full h-full rounded-lg shadow-2xl absolute bg-black flex justify-center items-center"
+                  className="text-white text-3xl [transform:rotateY(180deg)] w-full h-full rounded-lg shadow-2xl absolute bg-black flex justify-center items-center"
                   style={{ backfaceVisibility: "hidden" }}
                 >
                   {card.cardTitle}
