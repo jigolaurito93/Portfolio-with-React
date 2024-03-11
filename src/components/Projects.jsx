@@ -2,15 +2,20 @@ import React, { useState } from "react";
 import proj1 from "../assets/proj1.jpg";
 import proj2 from "../assets/proj2.jpg";
 import proj3 from "../assets/proj3.jpg";
+import { GithubIcon, WebsiteIcon } from "./Icons";
 
 const cards = [
   {
     cardImage: proj1,
     cardTitle: "Matrimoni",
+    github: "https://github.com/Colab-Team-4/matrimoni-react",
+    website: "https://matrimoni.vercel.app/",
   },
   {
     cardImage: proj2,
     cardTitle: "Break Buddy",
+    github: "https://github.com/Break-Buddy/Break-Buddy-React",
+    website: "https://break-buddy-react.vercel.app/",
   },
   {
     cardImage: proj3,
@@ -22,6 +27,7 @@ function Projects() {
   return (
     <div className="font-poppins flex-col flex py-10 justify-center items-center gap-10">
       <h1 className="text-4xl text-[#BFA181]">Projects</h1>
+
       <div className="flex gap-24 justify-center flex-col lg:flex-row">
         {cards.map((card) => (
           <div>
@@ -47,6 +53,14 @@ function Projects() {
                   {card.cardTitle}
                 </h1>
               </div>
+            </div>
+            <div className="mt-4 flex gap-4 items-center">
+              <a href={card.github} className="w-6 bg-white rounded-full cursor-pointer">
+                <GithubIcon />
+              </a>
+              <a href={card.website} className="w-6 bg-white rounded-full cursor-pointer">
+                <WebsiteIcon />
+              </a>
             </div>
             {/* container */}
           </div>

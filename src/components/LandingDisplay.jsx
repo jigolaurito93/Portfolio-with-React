@@ -1,8 +1,21 @@
 import React from "react";
 import jigo from "../assets/square_jigo.jpg";
 import { FacebookIcon, InstagramIcon } from "./Icons";
+import resume from "../assets/Resume.pdf";
 
 function LandingDisplay() {
+  const downloadFile = (url) => {
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.download = "Resume.pdf";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+  };
   return (
     <div className="px-20 h-screen">
       <div className="flex flex-col h-full pt-20 lg:pt-0 justify-center items-center lg:px-12">
@@ -23,17 +36,34 @@ function LandingDisplay() {
             </h1>
             <div className="text-[#178582] lg:text-lg 2xl:text-xl md:w-10/12 lg:max-w-4xl">
               <p className="font-poppins">
-                I'm a Chicago based Chef and Software Engineer.
+                I'm a Chicago based Chef and{" "}
+                <a
+                  target="_blank"
+                  href="https://www.credly.com/badges/2cbfbab6-8106-4b64-86c2-e3f73dbf19cc/public_url"
+                  className="cursor-pointer text-[#BFA181] font-extrabold hover:scale-150"
+                >
+                  Full-Stack Software Engineer.
+                </a>
               </p>
               <p className="font-poppins">
-                Currently, I'm an apprentice for <a target="_blank" href="https://www.joincolab.io/" className="text-[#BFA181] font-extrabold">Co.Lab</a> as a Software Developer
-                - Working on a product focused on promoting mental well-being
-                and team collaboration.
+                Currently, I'm an apprentice for{" "}
+                <a
+                  target="_blank"
+                  href="https://www.joincolab.io/"
+                  className="text-[#BFA181] font-extrabold"
+                >
+                  Co.Lab
+                </a>{" "}
+                as a Software Developer - Working on a product focused on
+                promoting mental well-being and team collaboration.
               </p>
             </div>
             {/* Buttons */}
             <div className="flex my-3 gap-10 mt-8 font-poppins text-xs md:items-start">
-              <button className="rounded-full flex items-center py-2 justify-center w-28 border-none text-[#0A1828] bg-[#178582] md:w-40 md:px-2">
+              <button
+                onClick={() => downloadFile(resume)}
+                className="rounded-full flex items-center py-2 justify-center w-28 border-none text-[#0A1828] bg-[#178582] md:w-40 md:px-2"
+              >
                 Download CV
               </button>
               <button className="rounded-full flex items-center py-2 justify-center w-28 border-none text-[#0A1828] bg-[#178582] md:w-40 md:px-2">

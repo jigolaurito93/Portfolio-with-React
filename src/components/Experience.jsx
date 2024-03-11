@@ -2,9 +2,9 @@ import React from "react";
 
 function Experience() {
   return (
-    <div className="px-20 font-poppins py-10">
+    <div className="px-20 font-poppins py-10 flex flex-col gap-10 mx-auto lg:w-[70%]">
       {/* Co.Lab */}
-      <div>
+      <div className="flex flex-col gap-4">
         <div className="flex text-[#BFA181] font-poppins justify-between">
           <h1 className="text-2xl font-bold">Co.Lab - Software Developer</h1>
           <h3 className="text-lg">September 2023 - Present</h3>
@@ -39,7 +39,7 @@ function Experience() {
       {/* Co.Lab */}
 
       {/* Coding Temple */}
-      <div>
+      <div className="flex flex-col gap-4">
         <div className="flex text-[#BFA181] font-poppins justify-between">
           <h1 className="text-2xl font-bold">
             Coding Temple - Software Engineer
@@ -77,7 +77,7 @@ function Experience() {
       {/* Coding Temple */}
 
       {/* Marriott */}
-      <div>
+      <div className="flex flex-col gap-4">
         <div className="flex text-[#BFA181] font-poppins justify-between">
           <h1 className="text-2xl font-bold">
             Marriott Magnificent Mile - Restaurant Chef
