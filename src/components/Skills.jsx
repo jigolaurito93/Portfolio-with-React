@@ -71,8 +71,9 @@ function Skills() {
 
   return (
     <div className="py-10 flex flex-col px-12 justify-center items-center font-poppins font-semibold gap-12 lg:px-24 xl:px-40 2xl:px-80">
-      <h1 className="text-3xl text-[#BFA181] w-full md:text-white lg:text-yellow-400 xl:text-blue-200 2xl:text-white">
-        Skills
+      {/* <h1 className="text-3xl text-[#BFA181] w-full md:text-white lg:text-yellow-400 xl:text-blue-200 2xl:text-white"> */}
+      <h1 className="text-4xl text-[#BFA181] w-full font-medium text-center">
+        Skills 
       </h1>
       <div className="flex flex-col gap-12 justify-center lg:w-full  items-center">
         
