@@ -11,8 +11,10 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <div className="bg-[#0A1828]">
-      <Navbar />
-      <LandingDisplay />
+      <div className="collapse md:visible">
+        <Navbar />
+      </div>
+        <LandingDisplay />
       <About />
       <Skills />
       <Experience />

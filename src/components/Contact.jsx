@@ -11,7 +11,7 @@ function Contact() {
       className="flex flex-col items-center justify-center py-32 font-poppins"
       id="contactMe"
     >
-      <h1 className="text-center text-4xl my-8 text-[#BFA181] w-full md:text-yellow-300 lg:text-white xl:text-blue-700 2xl:text-white">
+      <h1 className="text-center text-4xl my-8 text-[#BFA181] w-full">
         Let's Connect!
       </h1>{" "}
       <form
@@ -21,13 +21,13 @@ function Contact() {
         action="https: //formspree.io/f/xrgnlooy"
       >
         {/* FIRST AND LAST */}
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-4">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-8">
           {/* First */}
           <div className="flex flex-col w-full">
             {/* <label htmlFor="fName" id="fName" name="fName"></label> */}
             <input
               type="text"
-              className="rounded bg-[#323744] px-3 py-2 text-white my-2 outline-none ring-transparent focus:ring-1 focus:ring-gray-600"
+              className="rounded bg-[#323744] px-3 py-2 text-white my-2 lg:my-4 outline-none ring-transparent focus:ring-1 focus:ring-gray-600"
               placeholder="First Name"
             />
           </div>
@@ -37,7 +37,7 @@ function Contact() {
             {/* <label htmlFor="lName" id="lName" name="lName"></label> */}
             <input
               type="text"
-              className="rounded bg-[#323744] px-3 py-2 text-white my-2 outline-none ring-transparent focus:ring-1 focus:ring-gray-600"
+              className="rounded bg-[#323744] px-3 lg:my-4 py-2 text-white my-2 outline-none ring-transparent focus:ring-1 focus:ring-gray-600"
               placeholder="Last Name"
             />
           </div>
@@ -48,7 +48,7 @@ function Contact() {
         <label htmlFor="email"></label>
         <input
           type="email"
-          className="rounded bg-[#323744] px-3 py-2 text-white my-2 outline-none ring-transparent focus:ring-1 focus:ring-gray-600"
+          className="rounded bg-[#323744] px-3 py-2 text-white my-2 lg:my-4 outline-none ring-transparent focus:ring-1 focus:ring-gray-600"
           placeholder="Email"
           name="email"
           id="email"
@@ -58,7 +58,7 @@ function Contact() {
         <textarea
           id="message"
           name="message"
-          className="rounded bg-[#323744] px-3 py-2 text-white outline-none ring-transparent focus:ring-1 focus:ring-gray-600 my-2 min-h-32 lg:min-h-56"
+          className="rounded bg-[#323744] px-3 py-2 lg:my-4 text-white outline-none ring-transparent focus:ring-1 focus:ring-gray-600 my-2 min-h-32 lg:min-h-56"
           placeholder="Your Message"
         />
         <ValidationError
