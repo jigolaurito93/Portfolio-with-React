@@ -70,13 +70,15 @@ function Skills() {
   ];
 
   return (
-    <div className="py-10 flex flex-col px-12 justify-center items-center font-poppins font-semibold gap-12 lg:px-24 xl:px-40 2xl:px-80">
+    <div
+      className="py-10 flex flex-col px-12 justify-center items-center font-poppins font-semibold gap-12 lg:px-24 xl:px-40 2xl:px-80 scroll-mt-12"
+      id="skills"
+    >
       {/* <h1 className="text-3xl text-[#BFA181] w-full md:text-white lg:text-yellow-400 xl:text-blue-200 2xl:text-white"> */}
       <h1 className="text-4xl text-[#BFA181] w-full font-medium text-center">
-        Skills 
+        Skills
       </h1>
       <div className="flex flex-col gap-12 justify-center lg:w-full  items-center">
-        
         {/* Languages */}
         <div className="flex flex-col gap-8 w-full">
           <h1 className="text-[#BFA181] text-xl">Languages/Database</h1>
@@ -123,7 +125,10 @@ function Skills() {
           <h1 className="text-[#BFA181] text-xl">Tools</h1>
           <div className="flex flex-wrap gap-10 md:gap-12 justify-start">
             {tools.map((tool, i) => (
-              <div className="flex flex-col justify-center items-center gap-4 hover:scale-150 duration-300" key={i}>
+              <div
+                className="flex flex-col justify-center items-center gap-4 hover:scale-150 duration-300"
+                key={i}
+              >
                 <div
                   className={`w-16 md:w-20 lg:w-24 ${
                     i === 0 ? "bg-white rounded-full" : null

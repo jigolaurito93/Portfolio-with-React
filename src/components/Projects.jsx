@@ -25,7 +25,7 @@ const cards = [
 
 function Projects() {
   return (
-    <div className="font-poppins flex-col flex py-10 justify-center items-center gap-10">
+    <div className="font-poppins flex-col flex py-10 justify-center items-center gap-10 scroll-mt-28" id="projects">
       <h1 className="text-4xl text-[#BFA181]">Projects</h1>
 
       <div className="flex gap-24 justify-center flex-col lg:flex-row">

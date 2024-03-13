@@ -4,6 +4,10 @@ import { FacebookIcon, InstagramIcon } from "./Icons";
 import resume from "../assets/Resume.pdf";
 
 function LandingDisplay() {
+  const backToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const downloadFile = (url) => {
     const link = document.createElement("a");
 
@@ -17,7 +21,7 @@ function LandingDisplay() {
     document.body.removeChild(link);
   };
   return (
-    <div className="px-20 h-screen">
+    <div className="px-20 h-screen" id="home">
       <div className="flex flex-col h-full pt-20 lg:pt-0 justify-center items-center lg:px-12">
         <div className="flex flex-col gap-16 md:gap-20 lg:gap-36 md:flex-row md:justify-center ">
           {/* Hero Image */}
@@ -66,9 +70,11 @@ function LandingDisplay() {
               >
                 Download CV
               </button>
-              <button className="rounded-full flex items-center py-2 justify-center w-28 border-none text-[#0A1828] bg-[#178582] md:w-40 md:px-2">
-                Contact Me
-              </button>
+              <a href="#contactMe">
+                <button className="rounded-full flex items-center py-2 justify-center w-28 border-none text-[#0A1828] bg-[#178582] md:w-40 md:px-2">
+                  Contact Me
+                </button>
+              </a>
             </div>
             {/* Buttons */}
           </div>

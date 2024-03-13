@@ -2,7 +2,7 @@ import React from "react";
 
 function Experience() {
   return (
-    <div className="px-20 font-poppins py-16 flex flex-col gap-10 mx-auto lg:w-[70%]">
+    <div className="px-20 font-poppins py-16 flex flex-col gap-10 mx-auto lg:w-[70%] scroll-mt-8" id="experience">
       <h1 className="text-center text-4xl text-[#BFA181] w-full">Experience</h1>
       {/* Co.Lab */}
       <div className="flex flex-col gap-4">
