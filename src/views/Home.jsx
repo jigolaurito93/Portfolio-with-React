@@ -7,6 +7,7 @@ import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Socials from "../components/Socials";
 
 function Home() {
   return (
@@ -14,7 +15,8 @@ function Home() {
       <div className="collapse md:visible">
         <Navbar />
       </div>
-        <LandingDisplay />
+      <Socials />
+      <LandingDisplay />
       <About />
       <Skills />
       <Experience />

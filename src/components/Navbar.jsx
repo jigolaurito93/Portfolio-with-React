@@ -28,12 +28,17 @@ function Navbar() {
     },
   ];
   return (
-    <div className="fixed top-0 w-full h-16 pr-16 bg-[#0A1828] z-50">
-      <div className="flex items-center h-full justify-end md:gap-14 lg:gap-24 font-poppins text-white">
+    <div className="fixed top-0 w-full h-16 bg-[#0A1828] z-50 flex items-center justify-between px-9">
+      {/* <div className="flex justify-between items-center py-5 px-8"> */}
+      <h1 className="text-5xl font-bold font-poppins text-[#178582] pt-5">
+        J<span className="text-[#BFA181]">LAU</span>
+      </h1>
+      <div className="flex items-center h-full justify-end md:gap-14 lg:gap-24 font-poppins text-white pt-5">
         {links.map((link, i) => (
           <a href={link.source}>{link.title}</a>
         ))}
       </div>
+      {/* </div> */}
     </div>
   );
 }
