@@ -8,7 +8,7 @@ import {
 
 function Socials() {
   return (
-    <div className="fixed top-[300px] right-10 flex flex-col gap-9 bg-[#BFA181] rounded-full px-2 py-7">
+    <div className="fixed top-[300px] right-10 flex flex-col gap-9 bg-[#BFA181] rounded-full px-2 py-7 collapse lg:visible">
       <a
         href="https://github.com/jigolaurito93/"
         className="w-10 cursor-pointer hover:scale-110 duration-300"
