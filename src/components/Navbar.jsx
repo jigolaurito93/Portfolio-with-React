@@ -33,7 +33,7 @@ function Navbar() {
       <h1 className="text-5xl font-bold font-poppins text-[#178582] pt-5">
         J<span className="text-[#BFA181]">LAU</span>
       </h1>
-      <div className="flex items-center h-full justify-end md:gap-14 lg:gap-24 font-poppins text-white pt-5">
+      <div className="flex items-center h-full justify-end md:gap-9 lg:gap-16 xl:gap-24 font-poppins text-white pt-5">
         {links.map((link, i) => (
           <a href={link.source}>{link.title}</a>
         ))}

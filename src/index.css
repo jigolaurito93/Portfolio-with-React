@@ -3,39 +3,45 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Bebas Neue";
-    src:
-      local(BebasNeue-Regular),
-      url("/public/fonts/Bebas_Neue/BebasNeue-Regular.ttf")
-        format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-  }
+  font-family: "Bebas Neue";
+  src: local(BebasNeue-Regular),
+    url("/public/fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
 
 @font-face {
-    font-family: "Poppins";
-    src:
-      local(BebasNeue-Regular),
-      url("/public/fonts/Poppins/Poppins-Regular.ttf")
-        format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-  }
+  font-family: "Poppins";
+  src: local(BebasNeue-Regular),
+    url("/public/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
 
 @font-face {
-    font-family: "Poppins";
-    src:
-      local(BebasNeue-Regular),
-      url("/public/fonts/Poppins/Poppins-SemiBold.ttf")
-        format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-  }
+  font-family: "Poppins";
+  src: local(BebasNeue-Regular),
+    url("/public/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
 
-  #container:hover > #card {
-    cursor: pointer;
-    transform: rotateY(180deg);
-  }
+#container:hover > #card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.linksNavMobile {
+  transition: height 0.5s ease; /* Adjust duration and easing as needed */
+}
+
+.max-h-full {
+  max-height: 1000px; /* Adjust this value as needed */
+}
+
+.max-h-0 {
+  max-height: 0;
+}
