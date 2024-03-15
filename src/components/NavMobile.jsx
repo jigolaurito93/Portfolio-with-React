@@ -32,9 +32,12 @@ function NavMobile() {
 
   return (
     <div className="text-white bg-[#0A1828] fixed z-40 flex flex-col w-full md:collapse font-poppins">
-      <h1 className="text-4xl font-semibold pl-7 py-3 text-[#178582]">
+      <a
+        href="#home"
+        className="text-4xl font-semibold pl-7 py-3 text-[#178582]"
+      >
         J<span className="text-[#BFA181]">LAU</span>
-      </h1>
+      </a>
       {/* Burger Icon */}
       <div
         className="flex flex-col cursor-pointer z-50 w-full"
