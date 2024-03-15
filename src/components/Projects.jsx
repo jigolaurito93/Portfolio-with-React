@@ -59,13 +59,13 @@ function Projects() {
     >
       <h1 className="text-4xl text-[#BFA181]">Projects</h1>
 
-      <div className="flex gap-24 justify-center lg:px-20 lg:justify-normal flex-col lg:flex-row flex-wrap xl:w-[75%]">
+      <div className="lg:grid grid-flow-row grid-cols-2 gap-14 xl:grid-cols-3">
         {cards.map((card, i) => (
-          <div key={i}>
+          <div key={i} className="py-3 lg:py-0">
             {/* container */}
             <div
               id="container"
-              className="w-[350px] h-[500px] lg:w-[200px] lg:h-[300px] rounded-lg "
+              className="w-[300px] h-[450px] rounded-lg"
             >
               {/* card */}
               <div
@@ -92,7 +92,7 @@ function Projects() {
                 </h1>
               </div>
             </div>
-            <div className="mt-4 flex gap-4 items-center">
+            <div className="mt-5 pl-2 flex gap-4 items-center">
               <a
                 href={card.github}
                 className="w-6 bg-white rounded-full cursor-pointer"
