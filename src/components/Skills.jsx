@@ -19,6 +19,7 @@ import {
   NodeIcon,
   ViteIcon,
   PostmanIcon,
+  DartIcon
 } from "./Icons";
 
 function Skills() {
@@ -43,6 +44,10 @@ function Skills() {
       title: "JavaScript",
       href: "https://www.credly.com/badges/ac4c0517-3090-475c-b5e9-9c163a2febbc/public_url",
     },
+    {
+      logo: DartIcon,
+      title: "Dart",
+    }
   ];
   const frameworks = [
     {
