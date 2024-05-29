@@ -19,7 +19,8 @@ import {
   NodeIcon,
   ViteIcon,
   PostmanIcon,
-  DartIcon
+  DartIcon, 
+  FlutterIcon
 } from "./Icons";
 
 function Skills() {
@@ -59,6 +60,10 @@ function Skills() {
       logo: FlaskIcon,
       title: "Flask",
       href: "https://www.credly.com/badges/0ff8ce53-c27c-4bb6-b813-b67ed305caaa/public_url",
+    },
+    {
+      logo: FlutterIcon,
+      title: "Flutter",
     },
     { logo: BootstrapIcon, title: "Bootstrap" },
     { logo: TailwindIcon, title: "TailwindCSS" },
