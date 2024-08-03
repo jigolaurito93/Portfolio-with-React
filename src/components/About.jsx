@@ -70,7 +70,10 @@ function About() {
     setItemSelected(myExperience);
   };
   return (
-    <div className="px-16 md:px-24 xl:px-40 2xl:px-60 pt-12 pb-40 scroll-mt-52" id="about">
+    <div
+      className="px-16 md:px-24 xl:px-40 2xl:px-60 pt-12 pb-40 scroll-mt-52"
+      id="about"
+    >
       <div className="flex flex-col gap-20 items-center lg:flex-row">
         <div className="flex justify-center relative w-[65%] max-w-[300px] lg:w-1/2">
           <img src={chefPhoto} alt="" className="w-full z-10 rounded-3xl" />
@@ -82,57 +85,43 @@ function About() {
             <p>
               Hello, I'm Jose, a professional Chef turned Software Engineer, and
               a proud new Dad. Tech-savvy and raised in a generation immersed in
-              technology. 
+              technology.
             </p>
             <p>
-            My journey into web development sparked in 2005 when "Friendster" emerged.  The ability to personalize profiles, customize backgrounds, fonts, add music, and incorporate special effects captivated me.
+              My journey into web development sparked in 2005 when "Friendster"
+              emerged. The ability to personalize profiles, customize
+              backgrounds, fonts, add music, and incorporate special effects
+              captivated me.
             </p>
             <p>
-            While holding a Bachelor's degree in Hospitality - Culinary, I pursued my passion, enrolling in a coding bootcamp in 2023. Achieving certification as a <span className="text-[#BFA181] font-semibold">full-stack software engineer</span>, I concurrently serve as a full-time chef and part-time apprentice at <span className="text-[#BFA181] font-semibold">Co.Lab</span>. Engaging in projects like <span className="text-[#BFA181] font-semibold">"Matrimoni"</span> and <span className="text-[#BFA181] font-semibold">"Break Buddy"</span> has been a rewarding experience.
+              While holding a Bachelor's degree in Hospitality - Culinary, I
+              pursued my passion, enrolling in a coding bootcamp in 2023.
+              Achieving certification as a{" "}
+              <span className="text-[#BFA181] font-semibold">
+                full-stack software engineer
+              </span>
+              , I concurrently serve as a full-time chef and part-time
+              apprentice at{" "}
+              <span className="text-[#BFA181] font-semibold">Co.Lab</span>.
+              Engaging in projects like{" "}
+              <span className="text-[#BFA181] font-semibold">"Matrimoni"</span>{" "}
+              and{" "}
+              <span className="text-[#BFA181] font-semibold">
+                "Break Buddy"
+              </span>{" "}
+              has been a rewarding experience. I have transitioned to a{" "}
+              <span className="text-[#BFA181] font-semibold">
+                Senior Developer
+              </span>{" "}
+              role at{" "}
+              <span className="text-[#BFA181] font-semibold">
+                The Spartan IT Group
+              </span>
+              . Here, I specialize in creating dynamic solutions for local
+              businesses, contributing to projects like the company website and
+              client websites.
             </p>
           </div>
-
-
-          {/* <div className="flex flex-col gap-7">
-            <ul className="flex justify-between text-2xl text-[#03c9d8] font-bebasNeue tracking-widest leading-7">
-              <li
-                onClick={handleSkill}
-                className={`${
-                  skills && "underline underline-offset-8"
-                } cursor-pointer`}
-              >
-                SKILLS
-              </li>
-              <li
-                onClick={handleExperience}
-                className={`${
-                  experience && "underline underline-offset-8"
-                } cursor-pointer`}
-              >
-                EXPERIENCE
-              </li>
-              <li
-                onClick={handleEducation}
-                className={`${
-                  education && "underline underline-offset-8"
-                } cursor-pointer`}
-              >
-                EDUCATION
-              </li>
-            </ul>
-
-            <div className="flex flex-col gap-4 h-52">
-              {itemSelected.map((item, i) => (
-                <div>
-                  <h5 className="text-[#03c9d8] font-bebasNeue tracking-wider text-xl">
-                    {item.title}
-                  </h5>
-                  <h5 className="text-lg tracking-wider font-poppins">{item.content}</h5>
-                </div>
-              ))}
-            </div>
-          </div> */}
-
         </div>
       </div>
     </div>
