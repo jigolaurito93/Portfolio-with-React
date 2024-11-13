@@ -41,7 +41,7 @@ function LandingDisplay() {
             </h1>
             <div className="text-[#178582] lg:text-lg 2xl:text-xl md:w-10/12 lg:max-w-4xl">
               <p className="font-poppins">
-                I'm a Chicago based Chef and{" "}
+                I'm a Chicago based Chef and a{" "}
                 <a
                   target="_blank"
                   href="https://www.credly.com/badges/2cbfbab6-8106-4b64-86c2-e3f73dbf19cc/public_url"
@@ -51,16 +51,14 @@ function LandingDisplay() {
                 </a>
               </p>
               <p className="font-poppins">
-                Currently, I'm an apprentice for{" "}
+              I'm an Senior Developer at{" "}
                 <a
                   target="_blank"
-                  href="https://www.joincolab.io/"
+                  href="https://spartanitgroup.com/"
                   className="text-[#BFA181] font-extrabold"
                 >
-                  Co.Lab
-                </a>{" "}
-                as a Software Developer - Working on a product focused on
-                promoting mental well-being and team collaboration.
+                  The Spartan IT Group.
+                </a>
               </p>
             </div>
             {/* Buttons */}
